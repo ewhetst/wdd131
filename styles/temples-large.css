@@ -1,13 +1,15 @@
 @media (min-width: 60em) {
-    
+
     header {
         height: 120px;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between; 
     }
-    
-    
+
     .navigation {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end; 
         width: 100%;
     }
 
@@ -17,7 +19,10 @@
 
     .navigation a {
         text-align: right;
-        height: 90px
+        height: 90px;
+        display: flex;
+        align-items: center; 
+        padding: 0 20px; 
     }
 
     #menu {
