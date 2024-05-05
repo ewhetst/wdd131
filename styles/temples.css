@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap');
+
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Open sans", serif;
+}
+
+header {
+    background-color: #6096BA;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+#menu {
+    display: block;
+	font-size: 2rem;
+	font-weight:700;
+	background-color: #E7ECEF;
+	color: black;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.navigation li {
+    display: none;
+    cursor: grab;
+}
+
+.navigation a {
+	display: block;
+	text-decoration: none;
+	color: black;
+	transition: 0.5s;
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.show li {
+	display: block;
+}
+
+nav a:hover {
+    text-decoration: #f5f5f5;
+}
+
+main {
+    padding-top: 230px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color:#6096BA;
+    font-size: 28px;
+}
+
+figure {
+    display: inline-block;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+}
+
+figcaption {
+    color: #6096BA;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+footer {
+    background-color: #6096BA;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+}
