@@ -1,0 +1,93 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header,
+  main,
+  footer {
+    margin: 0 auto;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    text-align: center;
+  }
+  
+  header {
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+    background-color: black;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    border-bottom: 8px solid var(--secondary-color);
+  }
+  
+  .small {
+    width: 100%;
+    border-bottom: 4px solid var(--secondary-color);
+  }
+  
+  .card {
+    padding: 15px;
+    font-size: large;
+    background-color: white;
+    border-radius: 30px;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-family: "Open sans", sans-serif;
+    font-size: 2.5rem;
+  }
+  
+  footer {
+    padding: 20px;
+    color: red;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: larger;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .data,
+    .weather {
+      position: absolute;
+      z-index: 2;
+      opacity: .8;
+      width: 15%;
+    }
+  
+    .data {
+      left: 20px;
+      top: 10%;
+    }
+  
+    .weather {
+      right: 20px;
+      bottom: 10%;
+    }
+  
+    h2 {
+      background-color: red;
+      position: relative;
+      left: -10px;
+    }
+  
+    footer {
+      position: relative;
+    }
+  }
+  
