@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eli Whetstone" />
+    <meta name="description" content="Temple album website filtered"/>
+    <title>WDD 131 - Temple Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="label">Temple Album</div>
+        <div id="menu">
+            <h1>Temple Album</h1>
+        </div>
+	    <ul class="navigation">
+		    <li><a title="Home" href="#">Home</a></li>
+		    <li><a title="Old" href="#">Old</a></li>
+		    <li><a title="New" href="#">New</a></li>
+		    <li><a title="Large" href="#">Large</a></li>
+		    <li><a title="Small" href="#">Small</a></li>
+	    </ul>
+    </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="templeContainer" class="container">
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            <p>&copy;<span id="currentyear"></span>  Eli Whetstone  Oklahoma</p>
+            <p>Last Modified: <span id="lastModified"></span> CST</p>
+        </footer>
+        <script defer src="scripts/getdates.js"></script>
+</body>
+</html>
