@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the author and see some of their laser engraving projects.">
+    <meta name="author" content="Eli Whetstone">
+    <title>About Me - DIY Laser Engraving</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="DIY Laser Engraving Logo" class="logo">
+            <span class="site-name">DIY ENGRAVING</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="types.html">Types of Lasers</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-container">
+        <section id="introduction" class="grid-item">
+            <h1>Welcome to DIY Laser Engraving</h1>
+            <p>Explore the fascinating world of laser engraving and learn how you can start engraving your own projects at home.</p>
+            <p>There are many ways to start the journey of laser engraving. The first is to get a machine that you can operate at home. There is a great community that help each other with problems that others might have when first starting out.</p>
+            <p>Many resources that can be found on the internet can be helpful but sometimes confusing. This page will hopefully help make sense of how to get started with your very own engraving.</p>
+            <img src="images/laserengraver.png" alt="Laser Engraving in Action" class="responsive-image">
+        </section>
+        <section id="uses" class="grid-item">
+            <h2>What Can You Engrave?</h2>
+            <p>Laser engraving can be used on various materials including wood, glass, metal, and more. You can create personalized gifts, home decor, and even intricate art pieces. See the about me section to see some projects that you can do.</p>
+            <video controls>
+                <source src="images/engraving.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Eli Whetstone Oklahoma</p>
+        <p>Last Modified: <span id="lastModified"></span> CST</p>
+    </footer>
+    <script defer src="scripts/getdates.js"></script>
+</body>
+</html>
