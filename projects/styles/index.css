@@ -1,0 +1,134 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1; /* Background Color */
+    color: #2c3e50; /* Text Color */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+header {
+    background-color: #2ecc71; /* Secondary Color */
+    color: #fff;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.logo {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-family: 'Merriweather', serif; /* Headings Font */
+    font-size: 1.5em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 1em;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+footer {
+    background-color: #2c3e50; /* Text Color */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+img{
+    max-width: 20em;
+}
+
+button {
+    background-color: #3498db; /* Primary Color */
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker shade of Primary Color */
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 1em 0;
+    }
+}
+
+#uses video {
+    width: 100%; /* Ensure the video width fits its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure it takes up full width */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 600px) {
+    #uses video {
+        max-width: 100%; /* Ensure the video doesn't overflow its container on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
